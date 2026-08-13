@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --accent-violet: 139 92 246;
+    --accent-indigo: 99 102 241;
+    --accent-cyan: 34 211 238;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-night font-sans text-ink;
+    /* Lenis drives scrolling; native smooth scroll would fight it. */
+    overflow-x: hidden;
+  }
+
+  /* Visible, on-brand focus for keyboard users only. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-violet-brand ring-offset-2 ring-offset-night;
+  }
+
+  ::selection {
+    @apply bg-violet-brand/30 text-ink;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-medium text-balance;
+  }
+
+  p {
+    @apply text-pretty;
+  }
+
+  /* Anchor offsets so sticky-nav does not cover section headings. */
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
+  /*
+   * Deliberately NOT using `content-visibility: auto` on sections. It is a real
+   * rendering win, but the estimated `contain-intrinsic-size` makes the document
+   * height shift as sections render, and anchor scrolling reads that height:
+   * measured, the Contact link overshot by 174px and put its heading behind the
+   * nav. Correct navigation beats the paint saving on a page this size.
+   */
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-shell px-6 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply font-mono text-eyebrow uppercase text-ink-faint;
+  }
+
+  .gradient-text {
+    @apply bg-accent-sweep bg-clip-text text-transparent;
+    background-size: 200% 200%;
+  }
+
+  /*
+   * Gradient hairline border. Two background layers clipped differently:
+   * the flat surface fills the padding box, the gradient fills the border box.
+   * Works without mask-composite, and never paints over card content.
+   */
+  .gradient-ring {
+    border: 1px solid transparent;
+    /*
+     * The inner fill must be near-opaque. The gradient layer paints across the
+     * whole border box, so a translucent fill lets it wash the entire card
+     * rather than reading as a 1px ring.
+     */
+    background-image:
+      linear-gradient(rgba(22, 22, 25, 0.97), rgba(22, 22, 25, 0.97)),
+      linear-gradient(
+        100deg,
+        rgba(139, 92, 246, 0.6),
+        rgba(99, 102, 241, 0.45),
+        rgba(34, 211, 238, 0.55)
+      );
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  /* Card surface used across skills, projects, experience and contact. */
+  .surface-card {
+    @apply rounded-card border border-line bg-card/60 shadow-card backdrop-blur-sm;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Screen-reader-only, but focusable — used by the skip link. */
+  .sr-only-focusable:not(:focus):not(:focus-within) {
+    @apply sr-only;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

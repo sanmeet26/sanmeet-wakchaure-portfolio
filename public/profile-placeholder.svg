@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Placeholder portrait">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="55%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#27272A" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="400" fill="#18181B"/>
+  <rect width="400" height="400" fill="url(#grid)"/>
+  <circle cx="200" cy="164" r="54" fill="none" stroke="url(#a)" stroke-width="3" opacity="0.85"/>
+  <path d="M104 330c0-53 43-96 96-96s96 43 96 96" fill="none" stroke="url(#a)" stroke-width="3" opacity="0.85"/>
+  <text x="200" y="378" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,monospace" font-size="14" fill="#71717A">replace with photo</text>
+</svg>

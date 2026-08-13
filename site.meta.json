@@ -1,0 +1,21 @@
+{
+  "siteUrl": "https://sanmeetwakchaure.vercel.app",
+  "name": "Sanmeet Wakchaure",
+  "title": "Sanmeet Wakchaure \u2014 Full Stack Software Developer",
+  "description": "Full stack developer with 3+ years building enterprise web platforms \u2014 scalable APIs in FastAPI and .NET, responsive front ends in React and Angular, and the integration work that connects them.",
+  "shortDescription": "Enterprise web platforms, end to end: FastAPI and .NET APIs, React and Angular front ends, PostgreSQL underneath.",
+  "ogImage": "/og-image.png",
+  "locale": "en_IN",
+  "twitterHandle": null,
+  "keywords": [
+    "Sanmeet Wakchaure",
+    "Full Stack Developer",
+    "FastAPI",
+    "React",
+    "Angular",
+    ".NET Core",
+    "PostgreSQL",
+    "Pune",
+    "Microservices"
+  ]
+}

@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.tsbuildinfo
+
+# Caches
+.vite
+.eslintcache
+coverage
+
+# Environment — never commit real keys.
+# .env.example IS tracked, and is not matched by these patterns.
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+*.local
+
+# Deploy platforms
+.vercel
+.netlify
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editors
+.idea
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: package-lock.json is deliberately NOT ignored. Committing it is what
+# makes `npm install` reproducible for anyone cloning this repo, and Vercel and
+# Netlify both use it to install exact versions.

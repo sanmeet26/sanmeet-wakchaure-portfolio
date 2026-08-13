@@ -1,0 +1,93 @@
+import type { ExperienceItem } from '@/types';
+
+/** Newest first — the Timeline component renders in array order. */
+export const experience: ExperienceItem[] = [
+  {
+    id: 'fresh-gravity',
+    company: 'Fresh Gravity Software Services India Pvt Ltd',
+    role: 'Consultant — Full Stack Developer',
+    location: 'Pune, India',
+    start: 'Jun 2026',
+    end: 'Present',
+    current: true,
+    responsibilities: [
+      'Build scalable REST APIs for Pulse, an internal enterprise platform that consolidates timesheet, invoice, project and resource management.',
+      'Implement JWT authentication and role-based access control across the platform.',
+      'Deliver features across four release phases using FastAPI, SQLAlchemy and PostgreSQL.',
+    ],
+    achievements: [
+      'Improved application performance through database query optimisation, indexing and pagination.',
+      'Contributed to an automated test suite of 1,500+ tests, raising confidence in each release.',
+      'Supported UAT, defect triage and production issue resolution alongside feature work.',
+    ],
+    technologies: [
+      'Python',
+      'FastAPI',
+      'SQLAlchemy',
+      'PostgreSQL',
+      'React',
+      'REST APIs',
+      'JWT',
+      'RBAC',
+      'Automated testing',
+    ],
+  },
+  {
+    id: 'finiq-developer',
+    company: 'FinIQ Consulting India Pvt Ltd',
+    role: 'Software Developer',
+    location: 'Pune, India',
+    start: 'Jul 2023',
+    end: 'Jun 2026',
+    current: false,
+    responsibilities: [
+      'Developed and maintained a web platform for banks across Singapore and Malaysia that let traders work across multiple structured products from one unified interface.',
+      'Designed and integrated asynchronous messaging for tranche creation and order placement across microservices.',
+      'Built responsive Angular interfaces and integrated them with .NET Core REST APIs.',
+    ],
+    achievements: [
+      'Improved system throughput by 35% through the messaging redesign.',
+      'Migrated a legacy WCF service to scalable .NET 6 REST APIs, applying clean architecture to strengthen security and scalability.',
+      'Implemented Jenkins CI/CD pipelines for automated SIT builds and deployments, improving release consistency.',
+    ],
+    technologies: [
+      'Angular',
+      'C#',
+      '.NET 6',
+      'ASP.NET Core',
+      'Microservices',
+      'SQL Server',
+      'Jenkins',
+      'Git',
+    ],
+  },
+  {
+    id: 'sayu-softtech',
+    company: 'Sayu Softtech Pvt Ltd',
+    role: 'Web Development Intern',
+    location: 'Ahmednagar, India',
+    start: 'Mar 2023',
+    end: 'Jun 2023',
+    current: false,
+    responsibilities: [
+      'Built responsive web applications using HTML, CSS, JavaScript and PHP.',
+      'Implemented backend email notifications for handling user feedback.',
+    ],
+    achievements: ['Delivered 10+ course modules, including deployment and hosting support.'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+  },
+  {
+    id: 'finiq-intern',
+    company: 'FinIQ Consulting India Pvt Ltd',
+    role: 'Engineering Intern',
+    location: 'Pune, India',
+    start: 'May 2022',
+    end: 'Jul 2022',
+    current: false,
+    responsibilities: ['Developed responsive Angular components for internal tooling.'],
+    achievements: [
+      'Migrated Power BI dashboards to Angular using ApexCharts and D3.js for interactive data visualisation.',
+    ],
+    technologies: ['Angular', 'ApexCharts', 'D3.js'],
+  },
+];

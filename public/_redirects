@@ -1,0 +1,3 @@
+# Netlify only: serve the single-page app for any path.
+# Vercel does not read this file and needs no equivalent.
+/*  /index.html  200
