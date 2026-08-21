@@ -80,14 +80,14 @@ export function HttpServerPreview() {
 export function MetaphorDetectionPreview() {
   return (
     <div className="flex flex-col gap-2.5">
-      <p className="text-ink">His face became as black as coal.</p>
+      <p className="text-ink">The water was as pure as crystal.</p>
       <span className="my-0.5 h-px w-full bg-line" aria-hidden="true" />
       <p className="flex flex-wrap items-center gap-2">
-        <Dir>(face)</Dir>
+        <Dir>(water)</Dir>
         <Faint>&#9472;[</Faint>
-        <Accent>black</Accent>
+        <Accent>pure</Accent>
         <Faint>]&#9472;&rarr;</Faint>
-        <Dir>(coal)</Dir>
+        <Dir>(crystal)</Dir>
       </p>
       <p className="text-ink-muted">
         bilstm <Faint>|</Faint> bert-base-uncased

@@ -3,8 +3,7 @@ import type { Profile } from '@/types';
 export const profile: Profile = {
   name: 'Sanmeet Wakchaure',
   shortName: 'Sanmeet',
-  // title: 'Full Stack Software Developer',
-  title: 'Software Developer',
+  title: 'Full Stack Software Developer',
   taglines: [
     'REST APIs that hold up under load.',
     'Interfaces that stay fast as they grow.',

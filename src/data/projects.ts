@@ -37,7 +37,7 @@ export const projects: Project[] = [
   },
   {
     id: 'http-server',
-    title: 'HTTP Server from scratch',
+    title: 'HTTP Server',
     kind: 'personal',
     context: 'Networking project · Python',
     description:

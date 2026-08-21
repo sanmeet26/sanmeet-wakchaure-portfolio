@@ -35,7 +35,7 @@ export const experience: ExperienceItem[] = [
   {
     id: 'finiq-developer',
     company: 'FinIQ Consulting India Pvt Ltd',
-    role: 'Software Developer',
+    role: 'Full Stack Software Developer',
     location: 'Pune, India',
     start: 'Jul 2023',
     end: 'Jun 2026',
