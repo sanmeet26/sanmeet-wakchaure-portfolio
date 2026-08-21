@@ -3,7 +3,7 @@ import type { SkillCategory } from '@/types';
 export const skillCategories: SkillCategory[] = [
   {
     id: 'languages',
-    label: 'Languages',
+    label: 'Programming Languages',
     icon: 'Code2',
     accent: 'violet',
     blurb: 'Comfortable moving between managed and low-level.',
